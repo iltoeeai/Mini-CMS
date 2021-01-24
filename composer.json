@@ -1,0 +1,21 @@
+{
+    "name": "tadas/sprint3",
+    "description": "cms",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iltoeeai",
+            "email": "tadas1k@yahoo.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.8"
+    },
+    "autoload": {
+      "files": [
+        "src/models/Page.php",
+        "src/models/User.php"
+      ]
+    }
+}
