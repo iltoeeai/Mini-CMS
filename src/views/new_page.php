@@ -24,4 +24,3 @@ if ($_SESSION['valid']) {
     </div>';
 }
 require 'includes/footer.php';
-?>

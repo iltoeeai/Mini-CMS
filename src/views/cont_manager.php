@@ -14,20 +14,18 @@ if ($_SESSION['valid']) {
             $entityManager->persist($page);
             $entityManager->flush();
             Header('Location: cont_manager');
-        } 
+        }
     }
 
     // Update
     if (isset($_POST['update'])) {
-        
-            $page = $entityManager->find('Page', $_POST['id']);
-            $page->setTitle($_POST['page_name']);
-            $page->setContent($_POST['content']);
-            $entityManager->flush();
-            Header('Location: cont_manager');
-        
-    }
 
+        $page = $entityManager->find('Page', $_POST['id']);
+        $page->setTitle($_POST['page_name']);
+        $page->setContent($_POST['content']);
+        $entityManager->flush();
+        Header('Location: cont_manager');
+    }
 
     // Delete
     if (isset($_POST['delete'])) {
@@ -50,17 +48,17 @@ if ($_SESSION['valid']) {
             $title = $page->getTitle();
             $id = $page->getId();
             if ($title === 'Home') {  // Home page can't be deleted
-                echo '<tr class="text-center table-light"><th scope="row"><p style="font-size: 18px"> ' 
-                . $title . '</p><td></td><td class="text-center"><form action="update" 
-                method="POST"> <input type="hidden" name="id" value="' 
-                . $id . '"><button type="submit" class="btn btn-info">Update Home Page
+                echo '<tr class="text-center table-light"><th scope="row"><p style="font-size: 18px"> '
+                    . $title . '</p><td></td><td class="text-center"><form action="update" 
+                method="POST"> <input type="hidden" name="id" value="'
+                    . $id . '"><button type="submit" class="btn btn-info">Update Home Page
                 </a></form></td></tr>';
             } else {
-                echo ' <tr class="table-light text-center"><th scope="row"><p style="font-size: 18px"> ' 
-                . $title . '</p> </th><td class="text-center"><form action="cont_manager" 
-                method="POST"><input type="hidden" name="id" value="' 
-                . $id . '"><input type="hidden" name="title" value=' 
-                . $title . '><input type="hidden" name="delete" 
+                echo ' <tr class="table-light text-center"><th scope="row"><p style="font-size: 18px"> '
+                    . $title . '</p> </th><td class="text-center"><form action="cont_manager" 
+                method="POST"><input type="hidden" name="id" value="'
+                    . $id . '"><input type="hidden" name="title" value='
+                    . $title . '><input type="hidden" name="delete" 
                 value="y"><button type="submit" class="btn btn-danger">Delete Page
                 </button></form></td><td class="text-center"><form action="update" method="POST">
                 <input type="hidden" name="id" value="' . $id . '">

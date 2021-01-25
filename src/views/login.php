@@ -53,5 +53,3 @@ if (!$_SESSION['valid']) {
 }
 echo"</div>";
 require 'includes/footer.php';
-?>
-

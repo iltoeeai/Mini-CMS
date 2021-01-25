@@ -10,8 +10,6 @@ $cache = null;
 $useSimpleAnnotationReader = false;
 $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__ . "/src/models"), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
 
-// database configuration parameters
-
 $conn = array(
     'driver' => 'pdo_mysql',
     'host' => '127.0.0.1',
@@ -20,7 +18,6 @@ $conn = array(
     'password' => 'mysql',
 );
 
-// obtaining the entity manager
 $entityManager = EntityManager::create($conn, $config);
 
 
