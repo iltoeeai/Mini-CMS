@@ -23,7 +23,7 @@ ___
 - When you have them just navigate to the main page of the repository and download or clone the project (.zip file).
 - Add the project folder to your AMPPS projects directory ("../Ampps/www/"). 
 - Import file ("../seeds/cms.sql") into MySQL Workbench in order to be able to use the existing database schema.
-- Open the terminal in projects root directory and type "composer install" () or "php composer.phar install" (it depends if you have it installed globally or not).
+- Open the terminal in projects root directory and type "composer install" or "php composer.phar install" (it depends if you have it installed globally or not).
 ___
 <br>
 
