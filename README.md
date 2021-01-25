@@ -17,7 +17,7 @@ ___
  ___
 <br>
 
-## Instalation
+## Installation
 
 - In order to run the project you need to have AMPPS and database managing application installed (MySQL Workbench preferred).
 - When you have them just navigate to the main page of the repository and download or clone the project (.zip file).
