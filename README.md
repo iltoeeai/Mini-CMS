@@ -1,6 +1,6 @@
 # Mini-CMS project
 
-A content management system (CMS) is an application that is used to manage web content, allowing multiple contributors(administrators) to create, update and delete content.
+A content management system (CMS) is an application used to manage web content, allowing multiple contributors(administrators) to create, update and delete content.
 ___
 <br>
 
